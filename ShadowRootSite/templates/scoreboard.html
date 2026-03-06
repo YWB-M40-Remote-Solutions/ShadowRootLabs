@@ -1,0 +1,18 @@
+<h1>ShadowRoot Scoreboard</h1>
+
+<table>
+<tr>
+<th>User</th>
+<th>Solves</th>
+</tr>
+
+{% for user, score in scores %}
+
+<tr>
+<td>{{ user }}</td>
+<td>{{ score }}</td>
+</tr>
+
+{% endfor %}
+
+</table>

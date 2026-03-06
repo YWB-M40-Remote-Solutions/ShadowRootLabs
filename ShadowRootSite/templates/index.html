@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ShadowRoot - Cybersecurity Learning</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <h1>ShadowRoot</h1>
+        <p>Build. Break. Learn.</p>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>Learn Cybersecurity The Real Way</h1>
+
+                <p>
+                    Practice hacking skills through hands-on labs, reverse engineering,
+                    and real Capture The Flag challenges.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a class="button-primary" href="https://discord.gg/bjGRw33h">
+                        Join the Community
+                    </a>
+
+                    <a class="button-secondary" href="{{ url_for('challenges_page') }}">
+                        Explore Challenges
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="stats">
+
+            <div class="stat">
+                <h2>50+</h2>
+                <p>Cybersecurity Challenges</p>
+            </div>
+
+            <div class="stat">
+                <h2>4</h2>
+                <p>Learning Paths</p>
+            </div>
+
+            <div class="stat">
+                <h2>24/7</h2>
+                <p>Community Support</p>
+            </div>
+
+            <div class="stat">
+                <h2>Beginner → Advanced</h2>
+                <p>Skill Levels</p>
+            </div>
+
+        </section>
+
+    </header>
+
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('challenges_page') }}">Challenges</a>
+        <a href="{{ url_for('learn') }}">Learn</a>
+        <a href="https://discord.gg/bjGRw33h" target="_blank">Join Discord</a>
+    </nav>
+
+    <section class="hero">
+
+        <h2>Learn Cybersecurity Through Practice</h2>
+
+        <p>
+            ShadowRoot is a hands-on cybersecurity learning platform.
+            Practice Linux, Reverse Engineering, Web Security and real Capture The Flag challenges.
+        </p>
+
+        <a class="button" href="https://discord.gg/bjGRw33h" target="_blank">
+            Join the Community
+        </a>
+
+    </section>
+
+    <section class="terminal">
+
+        <h2>ShadowRoot Terminal</h2>
+
+        <div class="terminal-box">
+            <pre id="terminal-text"></pre>
+        </div>
+
+    </section>
+
+    <section class="features">
+
+        <h2>Skills You Will Learn</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Linux</h3>
+                <p>Learn essential Linux skills used by cybersecurity professionals.</p>
+            </div>
+
+            <div class="card">
+                <h3>Reverse Engineering</h3>
+                <p>Analyze binaries using tools like IDA and GDB.</p>
+            </div>
+
+            <div class="card">
+                <h3>CTF Challenges</h3>
+                <p>Solve real cybersecurity challenges and capture the flag.</p>
+            </div>
+
+            <div class="card">
+                <h3>Web Security</h3>
+                <p>Learn vulnerabilities like SQL Injection and XSS.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="discord">
+
+        <h2>Join The ShadowRoot Community</h2>
+
+        <p>
+            Connect with hackers, learners and builders.
+            Solve challenges together and level up your cybersecurity skills.
+        </p>
+
+        <a class="button" href="https://discord.gg/bjGRw33h" target="_blank">
+            Join the Discord Server
+        </a>
+
+    </section>
+
+    <section class="cta">
+
+        <h2>Start Your Cybersecurity Journey</h2>
+
+        <p>
+            Build real skills. Break systems. Learn cybersecurity the practical way.
+        </p>
+
+        <a class="button" href="https://discord.gg/bjGRw33h" target="_blank">
+            Join Discord
+        </a>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 ShadowRoot</p>
+
+        <p>
+            <a href="https://discord.gg/bjGRw33h">Discord</a> |
+            <a href="#">Patreon</a>
+        </p>
+
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
